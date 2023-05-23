@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Admin Dashboard</title>
+	<style>
+body {
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+nav {
+	background-color: orange;
+	color: white;
+	display: flex;
+	justify-content: space-between;
+	padding: 1rem;
+}
+		.container {
+			display: flex;
+			flex-wrap: flex;
+			justify-content: center;
+			margin: 20px 0;
+		}
+		.card {
+			background-color: aqua;
+			border: 1px solid #ddd;
+			border-radius: 4px;
+			box-shadow: 0 2px 2px rgba(0,0,0,0.1);
+			margin: 20px;
+			padding: 10px;
+			text-align: center;
+			width: 40%;
+                        height: 60px;
+		}
+		.card h3 {
+			margin-top: 10;
+                        
+                      
+		}
+.logo {
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+.menu ul {
+	display: flex;
+	list-style: none;
+}
+
+.menu li {
+	margin-left: 1rem;
+}
+
+.menu a {
+	color: #fff;
+	text-decoration: none;
+}
+
+</style>
+        
+</head>
+<body bgcolor = "silver" link = "black" vlink="grey">
+	<nav>
+		<div class="logo">Admin Dashboard</div>
+		<div class="menu">
+			<ul>
+				<li><a href="#">About us</a></li>
+				<li><a href="#">Users</a></li>
+				<li><a href="#">Settings</a></li>
+				<li><a href="#">Logout</a></li>
+			</ul>
+		</div>
+	</nav>
+	
+	<main>
+		<section>
+			<h1>Welcome, Admin!</h1>
+		</section>
+		
+		<section>
+			<h2>Student Info</h2>
+                        <div class="container">
+		<div class="card">
+			<h3><a href = "studentprofile.html">Student Profile</h3></a>	
+		</div>
+		<div class="card">
+			<h3><a href = "timing.html">Dashboard</h3></a>
+
+		</div>
+		<div class="card">
+			<h3><a href = "exam.html">Test</h3></a>
+		</div>
+	</div>
+		</section>
+		<section>
+			<h2>Recent Activity</h2>
+			<div class="table-container">
+
+			</div>
+		</section>
+	</main>
+	
+	<footer>
+		<p>&copy; [Year] Admin Dashboard. All rights reserved.</p>
+	</footer>
+	
+	<script src="app.js"></script>
+</body>
+</html>

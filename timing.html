@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Upcoming Exams</title>
+        <style>
+		body {
+			background-color: #F5f5f5;
+		}
+		table {
+			border-collapse: collapse;
+			width: 80%;
+			margin: auto;
+			font-family: Arial, sans-serif;
+			background-color: #FFFACD;
+		}
+		
+		th, td {
+			padding: 8px;
+			text-align: left;
+			border-bottom: 1px solid #ddd;
+		}
+		
+		tr:nth-child(even) {
+			background-color: #f2f2f2;
+		}
+		
+		th {
+			background-color: #008CBA;
+			color: white;
+		}
+		
+		td.total {
+			background-color: #008CBA;
+			color: white;
+		}
+		
+		strong {
+			font-size: 18px;
+		}
+	</style>
+	<script>
+		function showExams() {
+			var selectedDate = document.getElementById("datepicker").value;
+			var selectedDateTime = new Date(selectedDate);
+			
+			var now = new Date();
+			var exams = [
+				new Date("2023-05-03T09:00:00Z"),
+				new Date("2023-05-03T14:00:00Z"),
+				new Date("2023-05-03T11:00:00Z"),
+				new Date("2023-05-10T13:00:00Z"),
+				new Date("2023-05-05T10:00:00Z")
+			];
+			
+			// Filter the exams to get the upcoming ones after the selected date
+			var upcomingExams = exams.filter(function(exam) {
+				return exam >= selectedDateTime && exam >= now;
+			});
+			
+			// Create a table to display the upcoming exams
+			var table = "<table><tr><th>Date</th><th>Time</th></tr>";
+			for (var i = 0; i < upcomingExams.length; i++) {
+				var examDate = upcomingExams[i].toLocaleDateString();
+				var examTime = upcomingExams[i].toLocaleTimeString();
+				table += "<tr><td>" + examDate + "</td><td>" + examTime + "</td></tr>";
+			}
+			table += "</table>";
+			
+			document.getElementById("exams").innerHTML = table;
+		}
+	</script>
+</head>
+<body>
+	<h1>Student Results</h1>
+	
+	<table>
+		<tr>
+			<th>Student Name</th>
+			<th>Email ID</th>
+			<th>Score</th>
+		</tr>
+		<tr>
+			<td>John Smith</td>
+			<td>johnsmith27@gmail.com</td>
+			<td>78</td>
+		</tr>
+		<tr>
+			<td colspan="2" class="total"><strong>Total</strong></td>
+			<td class="total"><strong>78</strong></td>
+		</tr>
+	</table>
+	
+	<br>
+
+</body>
+<body>
+	<h2> Upcoming exam Schedule</h2>
+	<label for="datepicker">Select a date:</label>
+	<input type="date" id="datepicker">
+	<button onclick="showExams()">Show Exams</button>
+	<div id="exams"></div>
+</body>
+</html>
+
