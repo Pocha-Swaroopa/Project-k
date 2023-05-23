@@ -18,6 +18,8 @@ The Project-k is a Web-based application, developed during a 24-hour hackathon c
 5. Project-k helps the student to  practice the topics for getting perfection on a specified topic. 
 # Appreciation
 We would like to acknowledge and thank RGMCET and BYTS INDIA for their efforts in organizing the 24-hour hackathon, which brought  us together for an exciting event. We are immensely grateful for their commitment to fostering learning, collaboration, and growth. At last this event gave us an unique and enriching experience.
+# Contact Us
+You can get in touch with us by sending an email to swarooparani3103@gmail.com. We appreciate your inquiries and feedback.
 
 
 
