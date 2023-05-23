@@ -16,7 +16,8 @@ The Project-k is a Web-based application, developed during a 24-hour hackathon c
 3. The project is very much within the state of art since the project is a WINDOWS based, it uses very modern and common technique.
 4. It allows a student to login with given login details. Student can access the mode of exam like 'descriptive' or 'MCQs'.
 5. Project-k helps the student to  practice the topics for getting perfection on a specified topic. 
- 
+# Appreciation
+We would like to acknowledge and thank RGMCET and BYTS INDIA for their efforts in organizing the 24-hour hackathon, which brought  us together for an exciting event. We are immensely grateful for their commitment to fostering learning, collaboration, and growth. At last this event gave us an unique and enriching experience.
 
 
 
